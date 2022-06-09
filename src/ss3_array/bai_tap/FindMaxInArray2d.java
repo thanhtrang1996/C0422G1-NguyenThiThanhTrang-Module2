@@ -4,14 +4,14 @@ import java.util.Scanner;
 public class FindMaxInArray2d {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter a lenght array2d :");
-       int lenght1 = input.nextInt() ;
-        System.out.println("Enter a lenght array :");
-        int lenght2 = input.nextInt() ;
-       float[][] array2d = new float[lenght1][lenght2];
+        System.out.println("Enter a length array2d :");
+       int length1 = input.nextInt() ;
+        System.out.println("Enter a length array :");
+        int length2 = input.nextInt() ;
+       float[][] array2d = new float[length1][length2];
         System.out.println("Enter a element :" );
-        for (int i = 0; i <lenght1 ; i++) {
-            for (int j = 0; j < lenght2; j++) {
+        for (int i = 0; i <length1 ; i++) {
+            for (int j = 0; j < length2; j++) {
                 array2d[i][j] = input.nextInt();
             }
         }
@@ -20,7 +20,7 @@ public class FindMaxInArray2d {
         }
         float max = array2d[0][0];
         for (int i = 0; i < array2d.length; i++) {
-            for (int j = 0; j < lenght2; j++) {
+            for (int j = 0; j < length2; j++) {
                 if (array2d[i][j] > max) {
                     max = array2d[i][j];
                 }

@@ -19,7 +19,7 @@ public class MergeArray {
         }
         System.out.println("Array 2" + Arrays.toString(array2));
         int[] array3 = new int[10];
-            for (int i = 0; i < array1.length; i++) {
+            for (int i = array1.length - 1; i >= 0; i--) {
                 array3[i] = array1[i];
 
             }

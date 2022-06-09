@@ -23,7 +23,7 @@ public class AddElementToArray {
             }
         }while (index<0|| index> array.length-1);
 
-        if (index <0  || index >= array.length - 1) {
+        if (index >= array.length - 1) {
             System.out.println("Not add element to array");
         }
         for (int j = array.length-1; j >= index; j--) {

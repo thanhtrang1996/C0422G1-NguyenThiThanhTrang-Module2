@@ -27,12 +27,10 @@ public class FahrenheitToCelsius {
                 case  0:
                     System.exit(0);
             }
-        }while (choice != 0);
+        }while (true);
     } public static double celsiusToFahrenheit(double celsius) {
-        double fahrenheit = (9.0 / 5) * celsius + 32;
-        return fahrenheit;
+        return (9.0 / 5) * celsius + 32;
 } public static double fahrenheitToCelsius(double fahrenheit) {
-        double celsius = (5.0 / 9) * (fahrenheit - 32);
-        return celsius;
+        return (5.0 / 9) * (fahrenheit - 32);
     }
 }
