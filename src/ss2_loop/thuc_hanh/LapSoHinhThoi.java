@@ -18,10 +18,10 @@ public class LapSoHinhThoi {
         }
         for (int i = 4; i >=1; i--) {
             for (int j = 1; j <=10; j++) {
-                if (j ==  i - 1 || j == 4 + i  ) {
+                if (j == 6 - i || j == 5 + i) {
                     System.out.print(i);
                 } else {
-                    System.out.println(" ");
+                    System.out.print(" ");
                 }
 
             }
