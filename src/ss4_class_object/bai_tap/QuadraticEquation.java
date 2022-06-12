@@ -1,8 +1,11 @@
 package ss4_class_object.bai_tap;
 public class QuadraticEquation {
-   private float a,b,c;
+   private float a;
+   private float b;
+   private float c;
    private float delta;
-   private double x1,x2;
+   private double x1;;
+   private double x2;
     public QuadraticEquation (float a, float b, float c){
         this.a = a;
         this.b = b;
