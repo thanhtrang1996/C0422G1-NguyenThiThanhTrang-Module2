@@ -3,7 +3,8 @@ package ss4_class_object.bai_tap;
 import java.util.Date;
 
 public class StopWatch {
-    Date startTime,endTime;
+   private Date startTime;
+   private Date endTime;
     public StopWatch(){
         this.startTime = new Date();
     }

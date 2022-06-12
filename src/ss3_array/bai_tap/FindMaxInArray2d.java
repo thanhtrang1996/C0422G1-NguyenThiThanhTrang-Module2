@@ -9,9 +9,9 @@ public class FindMaxInArray2d {
         System.out.println("Enter a length array :");
         int length2 = input.nextInt() ;
        float[][] array2d = new float[length1][length2];
-        System.out.println("Enter a element :" );
         for (int i = 0; i <length1 ; i++) {
             for (int j = 0; j < length2; j++) {
+                System.out.println("Enter a element "  +(i +1) + ":");
                 array2d[i][j] = input.nextInt();
             }
         }
