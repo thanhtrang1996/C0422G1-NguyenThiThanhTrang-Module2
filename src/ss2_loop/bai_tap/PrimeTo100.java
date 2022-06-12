@@ -1,7 +1,6 @@
 package ss2_loop.bai_tap;
 public class PrimeTo100 {
     public static void main(String[] args) {
-        int count = 0;
         int n = 2;
         while (n <100) {
             int total = 0;
@@ -13,7 +12,7 @@ public class PrimeTo100 {
             }
             if (total == 0) {
                 System.out.println(n);
-                count++;
+
             }
             n++;
         }
