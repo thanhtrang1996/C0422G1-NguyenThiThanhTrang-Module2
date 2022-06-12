@@ -70,7 +70,6 @@ public class Fan {
         fan1.setColor("yellow");
         fan1.setOn(true);
         System.out.println(fan1.toString());
-        fan2.setSpeed(fan2.MEDIUM);
         fan2.setOn(false);
         System.out.println( fan2.toString());
     }
