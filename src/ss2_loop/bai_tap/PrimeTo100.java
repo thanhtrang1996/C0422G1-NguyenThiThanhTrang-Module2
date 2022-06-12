@@ -12,7 +12,6 @@ public class PrimeTo100 {
             }
             if (total == 0) {
                 System.out.println(n);
-
             }
             n++;
         }
