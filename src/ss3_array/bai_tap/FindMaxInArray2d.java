@@ -15,16 +15,16 @@ public class FindMaxInArray2d {
                 array2d[i][j] = input.nextInt();
             }
         }
-        for(float[] a : array2d){
+        for (float[] a : array2d) {
             System.out.println(Arrays.toString(a));
         }
         float max = array2d[0][0];
-        for (int i = 0; i < array2d.length; i++) {
+        for (int i = array2d.length - 1; i >= 0; i--)
             for (int j = 0; j < length2; j++) {
                 if (array2d[i][j] > max) {
                     max = array2d[i][j];
                 }
             }
-        }System.out.println("Max in array2d is :" + max);
+        System.out.println("Max in array2d is :" + max);
     }
 }
