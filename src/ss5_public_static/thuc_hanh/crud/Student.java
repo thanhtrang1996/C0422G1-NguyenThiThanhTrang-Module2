@@ -1,4 +1,4 @@
-package ss5_public_static.thuc_hanh.cur;
+package ss5_public_static.thuc_hanh.crud;
 
 public class Student {
     private int id;
