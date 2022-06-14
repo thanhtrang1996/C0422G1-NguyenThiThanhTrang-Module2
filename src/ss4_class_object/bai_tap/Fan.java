@@ -55,7 +55,6 @@ public class Fan {
                     '}' + "Fan is on";
         } else {
             return "Fan{" +
-                    "speed = " + speed +
                     ", color = " + color +
                     ", radius = " + radius +
                     '}' + "Fan is off";
