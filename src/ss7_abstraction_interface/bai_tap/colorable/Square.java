@@ -1,4 +1,4 @@
-package ss7_abstraction_interface.bai_tap.Colorable;
+package ss7_abstraction_interface.bai_tap.colorable;
 
 public class Square extends Shape implements Colorable {
     private int length1;

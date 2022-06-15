@@ -1,4 +1,4 @@
-package ss7_abstraction_interface.bai_tap.Colorable;
+package ss7_abstraction_interface.bai_tap.colorable;
 
 public class Circle extends Shape {
     private double radius = 1.0;

@@ -1,4 +1,4 @@
-package ss7_abstraction_interface.bai_tap.Colorable;
+package ss7_abstraction_interface.bai_tap.colorable;
 
 public class TestRun {
     public static void main(String[] args) {
