@@ -1,27 +1,27 @@
 package ss7_abstraction_interface.bai_tap.resizeable;
 
 public class Square  extends Shape implements Resizeable{
-    private int length1;
+    private int side;
 
 
     public Square() {
     }
-    public Square( int length1 ) {
+    public Square( int side ) {
 
-        this.length1 = length1;
+        this.side = side;
 
     }
 
     @Override
     public String toString() {
         return "Square{" +
-                " length1=" + length1 +
+                " side =" + side +
                 '}';
     }
 
     @Override
     public void resize(double percent) {
-        length1 += length1*percent/100;
+        side += side *percent/100;
 
     }
 }

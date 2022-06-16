@@ -1,27 +1,27 @@
 package ss7_abstraction_interface.bai_tap.colorable;
 
 public class Rectangle extends Shape {
-    private int length;
-    private int wirth;
+    private int width;
+    private int height;
 
     public Rectangle() {
     }
 
-    public Rectangle(int length, int wirth) {
-        this.length = length;
-        this.wirth = wirth;
+    public Rectangle(int height, int wirth) {
+        this.height = height;
+        this.width = wirth;
     }
 
 
     public int getArea() {
-        return this.length*this.wirth;
+        return this.height *this.width;
     }
 
     @Override
     public String toString() {
         return "Rectangle{" +
-                "length=" + length +
-                ", wirth=" + wirth +
+                "height =" + height +
+                ", width =" + width +
                 '}';
     }
 

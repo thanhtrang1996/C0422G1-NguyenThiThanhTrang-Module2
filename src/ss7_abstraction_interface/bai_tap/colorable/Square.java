@@ -1,24 +1,24 @@
 package ss7_abstraction_interface.bai_tap.colorable;
 
 public class Square extends Shape implements Colorable {
-    private int length1;
+    private int side;
 
 
     public Square() {
     }
-    public Square( int length1 ) {
+    public Square( int side ) {
 
-        this.length1 = length1;
+        this.side = side;
 
     }
     public  double getArea(){
-        return this.length1*this.length1;
+        return this.side *this.side;
     }
 
     @Override
     public String toString() {
         return "Square{" +
-                " length1=" + length1 +
+                "side =" + side +
                 '}';
     }
 
