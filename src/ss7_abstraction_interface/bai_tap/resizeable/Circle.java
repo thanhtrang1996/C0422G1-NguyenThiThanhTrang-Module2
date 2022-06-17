@@ -28,7 +28,7 @@ public class Circle extends  Shape implements Resizeable {
     public String toString() {
         return "Circle{" +
                 "radius=" + radius +
-                ", filled=" + filled +
+                ", filled=" + isFilled() +
                 '}';
     }
 

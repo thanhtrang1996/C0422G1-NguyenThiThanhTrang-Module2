@@ -2,7 +2,7 @@ package ss7_abstraction_interface.bai_tap.colorable;
 
 public  class Shape {
     private String color;
-    boolean filled;
+    private boolean filled;
     public Shape(){};
     public Shape(String color, boolean filled) {
         this.color = color;
