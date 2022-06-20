@@ -19,6 +19,7 @@ public class TestRun {
         for (ComparableCircle c : comparableCircles) {
             System.out.println(c);
         }
+        System.out.println("c2");
         CircleComparator circleComparator = new CircleComparator();
 
         Arrays.sort(circle, circleComparator);

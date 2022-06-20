@@ -8,6 +8,12 @@ public class CircleComparator implements Comparator<Circle> {
 
     @Override
     public int compare(Circle o1, Circle o2) {
-        return (int) (o1.getRadius() - o2.getRadius());
+        if (o1.getRadius()> o2.getRadius() ){
+            return 1;
+        }else if
+        ( o1.getRadius()< o2.getRadius() )
+        {return -1;
+        }else
+            return 0;
     }
 }

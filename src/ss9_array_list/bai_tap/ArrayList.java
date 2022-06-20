@@ -19,7 +19,7 @@ public class ArrayList<E> {
         }
     }
 
-    private int size() {
+    public int size() {
         return this.size;
     }
 
@@ -32,20 +32,20 @@ public class ArrayList<E> {
         }
     }
 
-    private void add(int index, E element) {
+    public void add(int index, E string) {
         if (index > elements.length) {
             throw new IllegalArgumentException("Index :" + index);
         } else if (size == elements.length) {
             this.ensureCapacity(10);
         }
         if (elements[index] == null) {
-            elements[index] = element;
+            elements[index] = string;
             size++;
         } else {
             for (int i = size + 1; i >= index; i--) {
                 elements[i] = elements[i - 1];
             }
-            elements[index] = element;
+            elements[index] = string;
             size++;
         }
     }
@@ -71,7 +71,7 @@ public class ArrayList<E> {
         }
         return index;
     }
-    private boolean add(E element) {
+    public boolean add(E element) {
         if (size == elements.length) {
             this.ensureCapacity(10);
         }

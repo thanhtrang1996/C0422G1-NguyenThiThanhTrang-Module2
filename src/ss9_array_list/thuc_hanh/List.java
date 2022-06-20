@@ -2,7 +2,7 @@ package ss9_array_list.thuc_hanh;
 
 import java.util.Arrays;
 
-public class List<Number> {
+public class List<E> {
         private int size = 0;
        private final int DEFAULT_CAPACITY = 10;
         private  Object element [] ;
@@ -14,18 +14,18 @@ public class List<Number> {
         element = Arrays.copyOf(element,newSize);
         }
 
-        public void add(Number count){
+        public void add(E count){
                 if (size == element.length){
                         ensure();
                 }
                 element[size++] = count;
         }
-        public Number get(int i){
+        public E get(int i){
                 if (i >= size || i < 0){
                         throw new IndexOutOfBoundsException("Index :" + i +",size" + i);
 
                 }
-                return (Number) element [i];
+                return (E) element [i];
         }
 
         public static void main(String[] args) {
