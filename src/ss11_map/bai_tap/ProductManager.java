@@ -8,6 +8,7 @@ public class ProductManager {
     Scanner scanner = new Scanner(System.in);
     ArrayList<Product> products = new ArrayList<>();
 
+
     public void display(){
         for (Product product1:products
              ) {
@@ -32,12 +33,12 @@ public class ProductManager {
         int id = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i <products.size() ; i++) {
             if(id == products.get(i).getId() ){
+                System.out.println("Enter name");
                 products.get(i).setName( scanner.nextLine());
+                System.out.println("Enter price");
                 products.get(i).setPrice( Float.parseFloat(scanner.nextLine()));
-                break;
             } else{
                 System.out.println("id incorrect");
-                break;
             }
         }
     }
@@ -78,14 +79,7 @@ public class ProductManager {
         }
     }
 
-
     public static void main(String[] args) {
-        System.out.println("1. Thêm sản phẩm " + "\n"+
-                "2.Sữa thông tin sản phẩm" +"\n"
-                +"3.Xoá sản phẩm" + "\n"
-                +"4.Hiển thị danh sách sản phẩm" + "\n"
-                +"5.Tìm kiếm  sản phẩm" + "\n"
-                +"6.Sắp xếp  sản phẩm" + "\n");
         ProductManager productManager = new ProductManager();
         productManager.addNewProduct();
         productManager.display();
