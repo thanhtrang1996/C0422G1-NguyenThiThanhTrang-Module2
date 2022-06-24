@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class ProductManager {
-    Scanner scanner = new Scanner(System.in);
-    ArrayList<Product> products = new ArrayList<>();
+  private   Scanner scanner = new Scanner(System.in);
+  private   ArrayList<Product> products = new ArrayList<>();
 
 
     public void display(){
