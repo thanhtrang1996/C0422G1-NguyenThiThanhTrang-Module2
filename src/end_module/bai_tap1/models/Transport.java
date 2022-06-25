@@ -1,7 +1,7 @@
 package end_module.bai_tap1.models;
 
 public class Transport {
-private int bienKiemSoat;
+int bienKiemSoat;
 private String tenHangSanXuat;
 private int namSanXuat;
 private String chuSoHuu;

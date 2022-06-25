@@ -13,6 +13,9 @@ public class Car extends Transport {
         this.kieuXe = kieuXe;
     }
 
+    public Car(String bienKiemSoat, int namSanXuat, String chuSoHuu, String kieuXe, int soChoNgoi) {
+    }
+
     public int getSoChoNgoi() {
         return soChoNgoi;
     }

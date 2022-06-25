@@ -5,7 +5,7 @@ import end_module.bai_tap1.models.Transport;
 public class Truck extends Transport {
     private int trongTai;
 
-    public Truck() {
+    public Truck(int bienKiemSoat, String hangSanXuat, int namSanXuat, String chuSoHuu, float taiTrong) {
     }
 
     public Truck(int bienKiemSoat, String tenHangSanXuat, int namSanXuat, String chuSoHuu, int trongTai) {
