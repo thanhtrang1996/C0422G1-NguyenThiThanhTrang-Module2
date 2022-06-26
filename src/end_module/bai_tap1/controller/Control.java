@@ -17,7 +17,7 @@ public class Control {
     private static MotorcycleService motorcycleService = new MotorcycleServiceImpl();
     private static TruckService truckService = new TruckServiceImpl();
 
-    public static void main(String[] args) {
+    public static void display() {
 
         int chon;
         do {
@@ -37,6 +37,7 @@ public class Control {
                 case 2:
                     hienThiPhuongTien();
                 case 3:
+                    xoaPhuongTien();
                 case 4:
                 case 5:
                     System.out.println("Kết thúc chương trình");
@@ -106,5 +107,17 @@ public class Control {
                     System.out.println("Nhập lại phương tiện bạn muốn hiển  thị");
             }
         } while (chon != 4);
+    }
+    public static void xoaPhuongTien(){
+        truckService.delete();
+        display();
+        carService.delete();
+        display();
+        motorcycleService.delete();
+        display();
+
+    }
+    public static void  timPhuongTien(){
+
     }
 }

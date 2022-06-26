@@ -4,7 +4,7 @@ public class Car extends Transport {
     private int soChoNgoi;
     private  String kieuXe;
 
-    public Car() {
+    public Car(int bienKiemSoat, int namSanXuat, String chuSoHuu, String kieuXe, int soChoNgoi) {
     }
 
     public Car(int bienKiemSoat, String tenHangSanXuat, int namSanXuat, String chuSoHuu, int soChoNgoi, String kieuXe) {
@@ -13,8 +13,7 @@ public class Car extends Transport {
         this.kieuXe = kieuXe;
     }
 
-    public Car(String bienKiemSoat, int namSanXuat, String chuSoHuu, String kieuXe, int soChoNgoi) {
-    }
+
 
     public int getSoChoNgoi() {
         return soChoNgoi;

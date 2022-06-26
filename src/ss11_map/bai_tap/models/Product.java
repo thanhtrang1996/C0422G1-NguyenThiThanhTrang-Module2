@@ -1,6 +1,8 @@
-package ss11_map.bai_tap;
+package ss11_map.bai_tap.models;
 
-public class Product implements Comparable<Product> {
+import ss11_map.bai_tap.service.ProductService;
+
+public  class Product {
 
     private int id;
     private String name;
@@ -46,20 +48,5 @@ public class Product implements Comparable<Product> {
                 ", name='" + name + '\'' +
                 ", price=" + price +
                 '}';
-    }
-
-
-
-
-
-    @Override
-    public int compareTo(Product o) {
-      if (o.getPrice() > this.getPrice()){
-          return 1;
-      }
-      else if (o.getPrice() < this.getPrice()){
-          return -1;
-      }
-      else return 0;
     }
 }
