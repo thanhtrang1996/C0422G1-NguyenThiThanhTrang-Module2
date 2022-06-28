@@ -4,7 +4,6 @@ import end_module.bai_tap1.models.Car;
 import end_module.bai_tap1.service.CarService;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class CarServiceImpl implements CarService {

@@ -16,8 +16,8 @@ public class FileCsv {
             String [] arr = null;
             while ((str = bufferedReader.readLine()) != null){
                arr = str.split(",");
-                System.out.println(arr[2]);
-                System.out.println(Arrays.toString(arr));
+               Country country = new Country(Integer.parseInt(arr[0]),arr[1],arr[2]);
+                System.out.println(country);
 
             }
         } catch (IOException e) {

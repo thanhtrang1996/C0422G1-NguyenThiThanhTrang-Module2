@@ -8,35 +8,53 @@ public class CopyFileText {
     public static List<String> readFile(String filePath){
         File file = new File(filePath);
         List<String> list = new ArrayList<>();
+        FileReader fileReader = null;
+        BufferedReader bufferedReader =null ;
         try {
-            FileReader fileReader = new FileReader(file);
-            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            fileReader = new FileReader(file);
+            bufferedReader = new BufferedReader(fileReader);
 
             String str = "";
             while ((str = bufferedReader.readLine()) != null){
                 list.add(str);
             }
-            bufferedReader.close();
+
 
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            try {
+                bufferedReader.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return list;
     }
     public  static void writeFile(String filePath,List<String> list){
         File file = new File(filePath);
+        FileWriter fileWriter = null;
+        BufferedWriter bufferedWriter = null;
         try {
-            FileWriter fileWriter = new FileWriter(file);
-            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+             fileWriter = new FileWriter(file);
+           bufferedWriter = new BufferedWriter(fileWriter);
 
             for (int i = 0; i < list.size(); i++) {
                 bufferedWriter.newLine();
                 bufferedWriter.write(list.get(i));
             }
-            bufferedWriter.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
+        finally {
+            try {
+                bufferedWriter.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
     }
 
     public static void main(String[] args) {

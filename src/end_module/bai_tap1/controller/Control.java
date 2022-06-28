@@ -1,6 +1,7 @@
 package end_module.bai_tap1.controller;
 
 import end_module.bai_tap1.models.Car;
+import end_module.bai_tap1.models.Transport;
 import end_module.bai_tap1.service.CarService;
 import end_module.bai_tap1.service.MotorcycleService;
 import end_module.bai_tap1.service.Service;
@@ -10,6 +11,7 @@ import end_module.bai_tap1.service.impl.MotorcycleServiceImpl;
 import end_module.bai_tap1.service.impl.TransportServiceImpl;
 import end_module.bai_tap1.service.impl.TruckServiceImpl;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Control {
@@ -109,12 +111,6 @@ public class Control {
         } while (chon != 4);
     }
     public static void xoaPhuongTien(){
-        truckService.delete();
-        display();
-        carService.delete();
-        display();
-        motorcycleService.delete();
-        display();
 
     }
     public static void  timPhuongTien(){

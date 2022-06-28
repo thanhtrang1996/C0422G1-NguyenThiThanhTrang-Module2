@@ -1,6 +1,10 @@
 package end_module.bai_tap1.models;
 
-public class Transport {
+import end_module.bai_tap1.service.TruckService;
+
+import java.util.ArrayList;
+
+public class Transport{
 int bienKiemSoat;
 private String tenHangSanXuat;
 private int namSanXuat;
