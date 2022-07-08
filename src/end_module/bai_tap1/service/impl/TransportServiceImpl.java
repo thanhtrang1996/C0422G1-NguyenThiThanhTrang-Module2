@@ -30,7 +30,7 @@ public abstract class TransportServiceImpl implements Service {
 //            }
 //            if (flag) {
 //                do {
-//                    System.out.println("Do you want to delete vehicles with license plate: " + licensePlate + "?");
+//                    System.out.println("Do you want to delete vehicles with license plate: " + bienKiemSoat + "?");
 //                    System.out.println("1. Yes" + "\n" +
 //                            "2. No");
 //                    System.out.print("Your choice: ");

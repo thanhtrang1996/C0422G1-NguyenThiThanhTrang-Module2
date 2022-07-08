@@ -62,6 +62,7 @@ public class ProductServiceImpl implements ProductService{
         int id = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < products.size(); i++) {
             if (id == products.get(i).getId()){
+                products.remove(i);
 
             } System.out.println("Display "+ products.get(i).getId()) ;
         }

@@ -5,7 +5,7 @@ public class Country {
     private  String code;
     private  String name;
 
-    public Country() {
+    public Country(int i) {
     }
 
     public Country(int id, String code, String name) {
@@ -45,5 +45,8 @@ public class Country {
                 ", code='" + code + '\'' +
                 ", name='" + name + '\'' +
                 ']';
+    }
+    public String toCSVFile(){
+        return this.getId() + "," + this.getCode() +"," + this.getName();
     }
 }
